@@ -36,4 +36,11 @@
         android:onClick="onWake"
         android:text="Wake" />
 
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSave"
+        android:text="Save" />
+
 </LinearLayout>

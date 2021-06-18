@@ -1,7 +1,5 @@
 package com.richard.wakeup;
 
-import android.util.Log;
-
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -23,7 +21,6 @@ public class WolPacket {
             magicString = magicString + macAddress;
         }
         magicString = COMMON_HEAD + magicString;
-        Log.d("WolPacket", magicString);
         this.magicBytes = BytesUtil.hexStringToBytes(magicString);
     }
 
